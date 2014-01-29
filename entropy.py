@@ -36,7 +36,7 @@ for i in xrange(n):
     for v in numpy.fromstring(s, dtype=numpy.uint32):
         pmf[v] = pmf.get(v,0) + 1.0
 
-print "\nADC bitsize estimation: %f bits" % numpy.log2(len(pmf.keys()))
+print "\nADC bitsize ESTIMATION: %f bits" % numpy.log2(len(pmf.keys()))
 
 pmfsum = 0
 i = 0
